@@ -4,7 +4,7 @@ The Free and Open Source Clause is for clients who are paranoid about GPL virali
 
 The Open Source Clause is preferred.
 
-Note that the "at X's discretion" phrase is important: "at Consultant's discretion" means the Consultant will use his or her professional/ethical judgement and can submit patches at will; "at Company's discretion" might be interpreted to mean that the Company needs to be notified prior to patch submission and has power to veto.
+Note that the "at X's discretion" phrase is important: "at Consultant's discretion" means the Consultant will use his or her professional/ethical judgement and can incorporate open source libraries and/or submit patches at will; "at Company's discretion" might be interpreted to mean that the Company needs to be notified prior to or concurrent with adding a library or submitting a patch, and has power to veto.
 
 ---
 
