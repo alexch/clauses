@@ -1,4 +1,8 @@
+# Clauses
+
 A collection of useful legal clauses for coding consultants or employees to put into their contracts. Written and/or solicited by <a href="http://alexchaffee.com">Alex Chaffee</a>. Available at <https://github.com/alexch/clauses>.
+
+Disclaimer: I AM NOT A LAWYER. You should run all this by your own legal counsel.
 
 <p xmlns:dct="http://purl.org/dc/terms/">
   <a rel="license"
