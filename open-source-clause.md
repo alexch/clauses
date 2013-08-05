@@ -1,10 +1,14 @@
-In plain English, this clause says "We use open source code, and if I happen to improve an open source library during the course of this contract, it's understood that I might want to turn it into a patch and resubmit it, as long as the patch won't violate the client's confidentiality or other proprietary IP".
+In plain English, this clause says "We use open source code, and if I happen to improve an open source library during the course of this contract, it's understood that I might turn it into a patch and submit it, as long as the patch won't violate the client's confidentiality or other proprietary IP". 
+
+Basically it makes explicit the two-way social contract of open source code. Since most of the work we do these days rests on an enormous mountain of value provided gratis to the client by legions of open source developers, it's only fair. 
 
 The Free and Open Source Clause is for clients who are paranoid about GPL virality.
 
 The Open Source Clause is preferred.
 
-Note that the "at X's discretion" phrase is important: "at Consultant's discretion" means the Consultant will use his or her professional/ethical judgement and can incorporate open source libraries and/or submit patches at will; "at Company's discretion" might be interpreted to mean that the Company needs to be notified prior to or concurrent with adding a library or submitting a patch, and has power to veto.
+Note that the "at X's discretion" phrase is important: "at Consultant's discretion" means the Consultant will use his or her professional/ethical judgement and can incorporate open source libraries and/or submit patches at will; "at Company's discretion" might be interpreted to mean that the Company needs to be notified prior to or concurrent with adding a library or submitting a patch. 
+
+Note also that this does not mean the client agrees to pay for you to work on arbitrary open source projects or for unreasonable amounts of time. But it should make both of you feel that the chore of submitting a bug report or workaround or patch, especially if that fix helped solve a work problem, is as valid a use of billable time as installing software or waiting for a test suite to run. 
 
 ---
 
@@ -34,7 +38,7 @@ charge ("Free Software").  In no event shall the source code from such
 Free Software be incorporated into the source code of any Work Product
 (including without limitation any unit test) or any other Deliverable
 without the prior written consent of Company.  Further, Consultant
-may, if required by the license of such Free Software, submit back to
+may submit back to
 such libraries any improvements ("patches") made to the Free Software
 during the course of work, as long as the submission of such patches
 violates neither the conditions in this Section, nor the
