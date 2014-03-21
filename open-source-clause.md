@@ -14,9 +14,13 @@ Note also that this does not mean the client agrees to pay for you to work on ar
 
 Open Source Clause
 
-**Open Source Software.**  It is understood that Consultant may, at
-Consultant's discretion, make use of libraries from various "Open
-Source" software products during the course of work. Consultant may
+**Open Source Software** means publicly available software that may be
+utilized pursuant and subject to the terms of an "open source" or
+similar license, including without limitation the "Ruby License," the
+"MIT License," the "Apache License" and the "GNU General Public
+License."  Company understands and agrees that Consultant may, at
+Consultant's discretion, make use of libraries from various Open
+Source Software products during the course of work. Consultant may
 submit back to such libraries any improvements ("patches") made to the
 Open Source Software during the course of work, as long as the
 submission of such patches violates neither the conditions in this
