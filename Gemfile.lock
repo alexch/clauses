@@ -1,0 +1,18 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    awesome_print (1.6.1)
+    htmlentities (4.3.3)
+    mustache (0.99.4)
+    pdfkit (0.8.2)
+    redcarpet (2.3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  awesome_print
+  htmlentities
+  mustache
+  pdfkit
+  redcarpet

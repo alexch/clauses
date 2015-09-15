@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+gem 'pdfkit'
+gem 'awesome_print'
+gem 'redcarpet'
+gem 'htmlentities'
+gem 'mustache'

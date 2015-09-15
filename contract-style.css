@@ -1,0 +1,11 @@
+body {
+  font-family: Times, serif;
+  font-size: 85%;
+}
+h1:not(:first-child) {
+  page-break-before: always;
+}
+p {
+  orphans: 3;
+  widows: 3;
+}

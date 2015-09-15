@@ -18,3 +18,10 @@ Disclaimer: I AM NOT A LAWYER. You should run all this by your own legal counsel
   has waived all copyright and related or neighboring rights to
   <span property="dct:title">Clauses</span>.
 </p>
+
+## Similar Projects
+
+* <https://stuffandnonsense.co.uk/projects/contract-killer/>
+* <http://www.docracy.com/>
+
+

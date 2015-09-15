@@ -1,4 +1,3 @@
-
     effective_date: 1/1/2000
     consultant_name: Clark Kent
     client_name: LexCorp, Inc., a Delaware corporation
@@ -12,7 +11,7 @@
     late_fee: five percent (5%)
     net_days: ten (10)
 
-CONSULTING AGREEMENT
+# CONSULTING AGREEMENT
 
 This CONSULTING AGREEMENT (the “Agreement”) is made as of {{effective_date}} (the “Effective Date”) by and between {{consultant_name}} (“Consultant”) and {{client_name}} (“Client”).
 
@@ -34,6 +33,7 @@ Late payments shall be subject to a late payment fee of {{late_fee}} of the amou
 [Coding:]
 As between Consultant and Client, Consultant’s original work product prepared for Client in connection with the Services (the “Work Product”) shall be deemed a “work made for hire” under United States Copyright Law.  To the extent such Work Product cannot be deemed a work made for hire, Consultant hereby assigns, sells and conveys all right, title and interest in and to such Work Product to Client in exchange for Client’s covenants hereunder.
 Notwithstanding the foregoing, Client understands and agrees that: (a) Ruby on Rails is an open source software (“OSS”) platform; and (b) Consultant’s Work Product shall be subject to the terms and conditions of the applicable Ruby on Rails or other OSS license.
+<br>
 [Teaching:]
 As between Consultant and Client, Consultant’s original work product prepared for Client in connection with the Services shall be deemed the property of Consultant, as long as such work violates neither the conditions in this Section, nor the Confidentiality provisions in Section 5.
 
@@ -64,6 +64,7 @@ IN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective
 
 
 By: ____________________________________________
+
 {{consultant_name}}
 
 
@@ -74,4 +75,5 @@ a {{client_location}} corporation
 
 
 By: ____________________________________________
+
 {{client_signatory}}
