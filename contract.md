@@ -7,7 +7,6 @@
     duration: one month
     max_hours: twenty (20)
     rate: 100
-    deposit: 1000
     late_fee: five percent (5%)
     net_days: ten (10)
 
@@ -25,8 +24,8 @@ Consultant will not perform or invoice Client for Services in excess of {{max_ho
 
 2.	Fees & Expenses.
 Client shall pay Consultant at the rate of ${{rate}} per hour for the Services, and reimburse Consultant for reasonable out-of-pocket expenses incurred in connection with the Services.
-An initial deposit of ${{deposit}} will be due prior to the commencement of the Services, and fees will be deducted from such deposit until it is exhausted.
-Consultant will transmit an invoice to Client every two weeks, and Client will pay Consultant all amounts due within {{net_days}} days of receipt of such invoice.
+{{#deposit}}An initial deposit of ${{deposit}} will be due prior to the commencement of the Services, and fees will be deducted from such deposit until it is exhausted.
+{{/deposit}}Consultant will transmit an invoice to Client every two weeks, and Client will pay Consultant all amounts due within {{net_days}} days of receipt of such invoice.
 Late payments shall be subject to a late payment fee of {{late_fee}} of the amount due.
 
 3.	Intellectual Property.

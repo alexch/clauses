@@ -11,6 +11,9 @@ end
 
 source = ARGV[0] || usage
 
+source = Pathname.new(source)
+output_path = File.join(source.dirname, source.basename.to_s.split('.')[0..-2].join('.') + '.pdf')
+
 body = source.is_a?(IO) ? source.read : File.read(source)
 
 # parse headers
@@ -71,7 +74,7 @@ html = markdown.render(text)
 require 'pdfkit'
 kit = PDFKit.new(html, :page_size => 'Letter')
 kit.stylesheets << "contract-style.css"
-file = kit.to_file("contract.pdf")
+file = kit.to_file(output_path)
 
 ap file
 `open #{file.path}`
