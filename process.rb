@@ -11,14 +11,24 @@ end
 
 source = ARGV[0] || usage
 
+source = Pathname.new(source)
+output_path = File.join(source.dirname,
+  source.basename.to_s.split('.')[0..-2].join('.') +
+  '-' + Date.today.iso8601 +
+  '.pdf')
+
 body = source.is_a?(IO) ? source.read : File.read(source)
+
+def false? x
+  ["false", "0", "no"].include?(x.downcase)
+end
 
 # parse headers
 if body.each_line.first =~ /^\s+\w+:/
   headers, body = body.split("\n\n", 2)
   scope = Hash[headers.each_line.map do |line|
                  line.split(':', 2).map { |x| x.strip }.
-                  map { |x|  ["false", "0", "no"].include?(x.downcase) ? false : x }
+                  map { |x|  false?(x) ? false : x }
                end]
 else
   scope = {}
@@ -71,14 +81,11 @@ html = markdown.render(text)
 
 require 'pdfkit'
 kit = PDFKit.new(html,
-  page_size: 'Letter',
-  print_media_type: true,
-  dpi: 400)
+  :page_size => 'Letter',
+  :print_media_type => true,
+  :dpi => 400)
 kit.stylesheets << "contract-style.css"
-
-today = Date.today.iso8601
-file = kit.to_file("contract-#{today}.pdf")
+file = kit.to_file(output_path)
 
 ap file
 `open #{file.path}`
-
