@@ -16,3 +16,6 @@ DEPENDENCIES
   mustache
   pdfkit
   redcarpet
+
+BUNDLED WITH
+   1.12.5

@@ -10,17 +10,18 @@
     deposit: 1000
     late_fee: five percent (5%)
     net_days: ten (10)
+    work_for_hire: false
 
 # CONSULTING AGREEMENT
 
-This CONSULTING AGREEMENT (the “Agreement”) is made as of {{effective_date}} (the “Effective Date”) by and between {{consultant_name}} (“Consultant”) and {{client_name}} (“Client”).
+This CONSULTING AGREEMENT (the "Agreement") is made as of {{effective_date}} (the "Effective Date") by and between {{consultant_name}} ("Consultant") and {{client_name}} ("Client").
 
-WHEREAS, Client desires to engage Consultant to perform technical consulting services (the “Services”), and Consultant desires to perform such Services.
+WHEREAS, Client desires to engage Consultant to perform technical consulting services (the "Services"), and Consultant desires to perform such Services.
 
-NOW, THEREFORE, Consultant and Client (collectively the “Parties”), for good and valuable consideration, the receipt of which is hereby acknowledged, agree as follows:
+NOW, THEREFORE, Consultant and Client (collectively the "Parties"), for good and valuable consideration, the receipt of which is hereby acknowledged, agree as follows:
 
 1.	Services.
-For a period of approximately {{duration}} commencing on the Effective Date (or for such longer period as the Parties may agree in writing, which need not be a formal amendment to this Agreement), Consultant will consult and work with Client’s personnel on such specific assignments as are provided from time to time by Company in email or other written directions (the “Services”). Consultant will perform the Services in a diligent, professional and workmanlike manner, consistent with industry standard.
+For a period of approximately {{duration}} commencing on the Effective Date (or for such longer period as the Parties may agree in writing, which need not be a formal amendment to this Agreement), Consultant will consult and work with Client’s personnel on such specific assignments as are provided from time to time by Company in email or other written directions (the "Services"). Consultant will perform the Services in a diligent, professional and workmanlike manner, consistent with industry standard.
 Consultant will not perform or invoice Client for Services in excess of {{max_hours}} hours per week without Client’s prior written consent.
 
 2.	Fees & Expenses.
@@ -30,19 +31,22 @@ Consultant will transmit an invoice to Client every two weeks, and Client will p
 Late payments shall be subject to a late payment fee of {{late_fee}} of the amount due.
 
 3.	Intellectual Property.
-[Coding:]
-As between Consultant and Client, Consultant’s original work product prepared for Client in connection with the Services (the “Work Product”) shall be deemed a “work made for hire” under United States Copyright Law.  To the extent such Work Product cannot be deemed a work made for hire, Consultant hereby assigns, sells and conveys all right, title and interest in and to such Work Product to Client in exchange for Client’s covenants hereunder.
-Notwithstanding the foregoing, Client understands and agrees that: (a) Ruby on Rails is an open source software (“OSS”) platform; and (b) Consultant’s Work Product shall be subject to the terms and conditions of the applicable Ruby on Rails or other OSS license.
-<br>
-[Teaching:]
-As between Consultant and Client, Consultant’s original work product prepared for Client in connection with the Services shall be deemed the property of Consultant, as long as such work violates neither the conditions in this Section, nor the Confidentiality provisions in Section 5.
+{{#work_for_hire}}
+(a.) As between Consultant and Client, Consultant’s original work product prepared for Client in connection with the Services (the "Work Product") shall be deemed a "work made for hire" under United States Copyright Law.
+(b.) To the extent such Work Product cannot be deemed a work made for hire, Consultant hereby assigns, sells and conveys all right, title and interest in and to such Work Product to Client in exchange for Client’s covenants hereunder.
+{{/work_for_hire}}
+{{^work_for_hire}}
+(a.) As between Consultant and Client, Consultant’s original work product prepared for Client in connection with the Services (the "Work Product") shall be deemed the property of Consultant, as long as such work violates neither the conditions in this Section, nor the Confidentiality provisions in Section 5, nor the Open Source Software provisions in Section 4.
+(b.) Upon acceptance by Client, Consultant hereby grants to Client, effective immediately, a worldwide, non exclusive, sublicenseable (through multiple tiers), assignable, royalty free, perpetual, irrevocable, fully-paid right to use, reproduce, distribute (through multiple tiers), create derivative works of, publicly perform, publicly display, digitally perform, make, have made, modify, sell, offer for sale and import the Work Product in any media now known or hereafter known, solely as a part of or as incorporated into Client's offerings.
+{{/work_for_hire}}
+(c.) Notwithstanding the foregoing, Client understands and agrees that: (i) Consultant may use and contribute patches to Open Source Software (OSS) projects without prior approval; and (ii) Consultant’s Work Product shall be subject to the terms and conditions of the applicable project's OSS license and Section 4.
 
 4. Open Source Software.
-It is understood that Consultant may, at Consultant's discretion, make use of libraries from various "Open Source" software products during the course of work.
+It is understood that Consultant may, at Consultant's discretion, make use of libraries from various Open Source Software (OSS) products during the course of work.
 Consultant may submit back to such libraries any improvements ("patches") made to the Open Source Software during the course of work, as long as the submission of such patches violates neither the conditions in this Section, nor the Confidentiality provisions in Section 5.
 
 5. Confidentiality.
-Consultant agrees to maintain in confidence Client’s confidential and proprietary information (“Confidential Information”), and not to disclose or use such information other than in connection with Consultant’s Services hereunder.
+Consultant agrees to maintain in confidence Client’s confidential and proprietary information ("Confidential Information"), and not to disclose or use such information other than in connection with Consultant’s Services hereunder.
 
 6. Term & Termination.
 This Agreement is effective as of the Effective Date set forth above, and shall continue until terminated, either immediately due to a material breach or either party’s bankruptcy, insolvency or assignment for the benefit of creditors, or upon thirty (30) days written notice by one party to the other for any other reason.  The termination or expiration of this Agreement shall not relieve Client of its obligations to pay Consultant for any Services rendered or expenses incurred prior to termination, or relieve Consultant of his obligation to maintain the confidentiality of Client’s Confidential Information.  Sections 3, 4, 5, 6, 7, 8, and 9 shall survive the termination and/or expiration of this Agreement.
@@ -59,7 +63,7 @@ If any provision of this Agreement shall be deemed unenforceable, it shall be re
 
 IN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective Date.
 
-“CONSULTANT”
+"CONSULTANT"
 
 
 
@@ -68,7 +72,7 @@ By: ____________________________________________
 {{consultant_name}}
 
 
-“CLIENT”
+"CLIENT"
 
 {{client_name}},
 a {{client_location}} corporation

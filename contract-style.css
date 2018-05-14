@@ -1,6 +1,6 @@
 body {
   font-family: Times, serif;
-  font-size: 85%;
+  font-size: 11pt;
 }
 h1:not(:first-child) {
   page-break-before: always;

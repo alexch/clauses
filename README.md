@@ -6,6 +6,22 @@ Similar clauses at <https://gist.github.com/postmodern/3242224>
 
 Disclaimer: I AM NOT A LAWYER. You should run all this by your own legal counsel.
 
+# Setup
+
+MacOS:
+```
+brew install caskroom/cask/wkhtmltopdf
+bundle install
+```
+
+# Usage
+
+1. edit `contract.md`, especially the variables at the very top of the file
+2. `bundle exec ruby process.rb contract.md`
+3. open `contract-2000-11-22.pdf` (or whatever today's date is) and proofread it
+
+```
+
 <p xmlns:dct="http://purl.org/dc/terms/">
   <a rel="license"
      href="http://creativecommons.org/publicdomain/zero/1.0/">

@@ -17,7 +17,8 @@ body = source.is_a?(IO) ? source.read : File.read(source)
 if body.each_line.first =~ /^\s+\w+:/
   headers, body = body.split("\n\n", 2)
   scope = Hash[headers.each_line.map do |line|
-                 line.split(':', 2).map { |x| x.strip }
+                 line.split(':', 2).map { |x| x.strip }.
+                  map { |x|  ["false", "0", "no"].include?(x.downcase) ? false : x }
                end]
 else
   scope = {}
@@ -69,9 +70,14 @@ html = markdown.render(text)
 # http://asciicasts.com/episodes/220-pdfkit
 
 require 'pdfkit'
-kit = PDFKit.new(html, :page_size => 'Letter')
+kit = PDFKit.new(html,
+  page_size: 'Letter',
+  print_media_type: true,
+  dpi: 400)
 kit.stylesheets << "contract-style.css"
-file = kit.to_file("contract.pdf")
+
+today = Date.today.iso8601
+file = kit.to_file("contract-#{today}.pdf")
 
 ap file
 `open #{file.path}`
